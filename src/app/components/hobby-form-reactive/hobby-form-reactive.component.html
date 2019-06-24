@@ -1,0 +1,13 @@
+<form [formGroup]="hobbyForm">
+  <label for="name">Name:</label>
+  <input type="text" formControlName="name" id="name"/>
+
+  <label for="description">Description:</label>
+  <input formControlName="description" id="description"/>
+
+  <label for="experience">Experience:</label>
+  <input formControlName="experience" id="experience"/>
+  {{this.hobbyForm.get('experience').value}}
+
+  <button (click)="submitForm()">Save</button>
+</form>

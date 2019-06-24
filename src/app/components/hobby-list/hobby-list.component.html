@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let hobby of hobbies" (click)="onHobbyClicked(hobby)">{{hobby.name}} {{hobby.description}}
+    {{hobby.experience}}
+  </li>
+</ul>
+<p [ngStyle]="{backgroundColor : getBgCol()}">{{'count:' + hobbies.length}}</p>

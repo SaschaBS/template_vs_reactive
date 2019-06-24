@@ -1,0 +1,13 @@
+<form #hobbyForm="ngForm" (ngSubmit)="submitForm()">
+  <label for="name">Name:</label>
+  <input type="text" [(ngModel)]="hobby.name" name="name" id="name"/>
+
+  <label for="description">Description:</label>
+  <input [(ngModel)]="hobby.description" name="description" id="description"/>
+
+  <label for="experience">Experience:</label>
+  <input [(ngModel)]="hobby.experience" name="experience" id="experience"/>
+  {{hobby.experience}}
+
+  <button type="submit">Save</button>
+</form>
