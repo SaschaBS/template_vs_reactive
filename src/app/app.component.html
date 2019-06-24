@@ -4,8 +4,8 @@
   <!--<input [(ngModel)]="message" type="text"/>-->
   <!--<p>{{message}}</p>-->
   <!--<button (click)="addHobby()">Add Hobby</button>-->
-  <app-hobby-form [hobby2]="loadHobby()" (hobbyAdded)="addHobby($event)"></app-hobby-form>
-  <!--<app-hobby-form-reactive [hobby]="loadHobby()" (hobbyAdded)="addHobby($event)"></app-hobby-form-reactive>-->
+  <!--<app-hobby-form [hobby2]="loadHobby()" (hobbyAdded)="addHobby($event)"></app-hobby-form>-->
+  <app-hobby-form-reactive [hobby]="loadHobby()" (hobbyAdded)="addHobby($event)"></app-hobby-form-reactive>
 
   <router-outlet></router-outlet>
 </div>
