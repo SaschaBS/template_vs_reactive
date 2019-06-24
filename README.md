@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
+I set up this project to test (and compare) template driven forms with reactive forms approach.
+In app.component.html there are two lines:
+
+  <app-hobby-form [hobby2]="loadHobby()" (hobbyAdded)="addHobby($event)"></app-hobby-form>
+  <!--<app-hobby-form-reactive [hobby]="loadHobby()" (hobbyAdded)="addHobby($event)"></app-hobby-form-reactive>-->
+  
+comment in <app-hobby-form> to see the template driven approach.
+comment out <app-hobby-form> and comment in <app-hobby-form-reactive> to see the reactive forms approch. Outcome is the same, but source code differs.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
